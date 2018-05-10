@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.llbodyworks.com/home</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2015-01-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.llbodyworks.com/home-1</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2017-05-18</lastmod>
+    <image:image>
+      <image:loc>https://static1.squarespace.com/static/54b096cbe4b08d0f48c0f027/t/54b0bf8ee4b07250a77a6657/1420869570114/</image:loc>
+      <image:title>Home</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.llbodyworks.com/schedule</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2017-03-24</lastmod>
+  </url>
+  <url>
+    <loc>https://www.llbodyworks.com/history-of-zoning</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2015-04-18</lastmod>
+  </url>
+</urlset>
+
