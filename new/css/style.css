@@ -1,0 +1,46 @@
+/* 
+gray D9DDDC
+brown 94948A
+red 59251F
+green 708E3B
+dark gray 33392D
+ */
+
+body, .ff-sans-serif {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1, h2, h3, h4, .ff-serif {
+  font-family: 'Patua One', cursive;
+}
+.home .hero, .home .hero .row {
+  height: 100vh;
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.home .hero {
+  background-image: linear-gradient(to bottom, rgba(69, 67, 64, 0.8), rgba(69, 67, 64, 0.5)), url(../images/studio.jpg);
+  background-size: cover;
+  background-position: 0 0, bottom center;
+  background-color: rgba(69, 67, 64, 1);
+  color: #ffffff;
+}
+.services .service {
+  padding: 60px 0;
+}
+.services .fa-chevron-circle-right {
+  color: #708E3B;
+}
+.section-odd {
+  background-color: #33392D;
+  /* background-color: #f5f5f1; */
+  color: #ffffff;
+}
+.section-even {
+  background-color: #ffffff;
+}
+.fa-ul {
+  margin-left: 1.5em;
+}
+.bg-light {
+  background-color: #ffffff!important;
+}
