@@ -72,5 +72,8 @@ a:link, a:visited, a:hover, a:active {
   color: #ffffff !important;
 }
 .jumbotron {
-  background-color: rgba(69, 67, 64, 0.3)
+  background-color: transparent;
+}
+.phone {
+  color: #33392D;
 }
