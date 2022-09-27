@@ -1,19 +1,19 @@
-# [[redirects]]
-#   from = "http://llbodyworks.com"
-#   to = "https://www.lightandlifemassage.com"
-#   status = 302
+[[redirects]]
+  from = "http://llbodyworks.com"
+  to = "https://www.lightandlifemassage.com"
+  status = 302
 
-# [[redirects]]
-#   from = "https://llbodyworks.com"
-#   to = "https://www.lightandlifemassage.com"
-#   status = 302
+[[redirects]]
+  from = "https://llbodyworks.com"
+  to = "https://www.lightandlifemassage.com"
+  status = 302
 
-# [[redirects]]
-#   from = "http://www.llbodyworks.com"
-#   to = "https://www.lightandlifemassage.com"
-#   status = 302
+[[redirects]]
+  from = "http://www.llbodyworks.com"
+  to = "https://www.lightandlifemassage.com"
+  status = 302
 
-# [[redirects]]
-#   from = "https://www.llbodyworks.com"
-#   to = "https://www.lightandlifemassage.com"
-#   status = 302
+[[redirects]]
+  from = "https://www.llbodyworks.com"
+  to = "https://www.lightandlifemassage.com"
+  status = 302
