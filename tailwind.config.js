@@ -9,7 +9,7 @@ module.exports = {
       },
     },
     container: {
-      center: true
+      // center: true
     }
   },
   plugins: [],

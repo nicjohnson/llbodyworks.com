@@ -1,0 +1,24 @@
+{% macro homeService(oddEven, title, slug, alt, features, whatToExpect) %}
+<section id="{{ slug }}" class="service section-{{ oddEven }}">
+  <div class="container">
+    <h2 class="mb-4">{{ title }}</h2>
+    <div class="row">
+      <div class="col-12 col-lg-3">
+        <img src="/assets/img/{{ slug }}.jpg" class="img-fluid mb-4 mb-lg-0" alt="{{ alt }}">
+      </div>
+      <div class="col-12 col-lg-7">
+        <ul class="fa-ul">
+        {% for feature in features %}
+          <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>{{ feature }}</li>
+        {% endfor %}
+        </ul>
+        <p>
+          <strong>What to expect:</strong>
+          {{ whatToExpect }}
+        </p>
+        <a href="https://light-life-massage.square.site/" class="btn btn-primary">Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endmacro %}
