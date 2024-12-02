@@ -74,6 +74,6 @@ a:link, a:visited, a:hover, a:active {
   color: #ffffff !important;
 }
 
-/* @tailwind base;
+@tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities;
