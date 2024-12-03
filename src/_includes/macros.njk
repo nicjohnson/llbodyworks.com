@@ -34,13 +34,13 @@
   <p class="mt-4">
     <a class="bg-rose-950 rounded-md w-fit px-3 py-1 text-sm text-white" href="{{ params.link }}">{{ params.linkText }}</a>
   </p>
-  {% if params.bio %}
-    <div class="bio mt-6">
-      {% if params.image %}
-        <img src="{{ params.image }}" alt="{{ params.name }}" class="mb-2 ml-2 w-1/2 float-right h-auto rounded-lg">
-      {% endif %}
-      {{ params.bio }}
-    </div>
-  {% endif %}
+  <div class="bio mt-6">
+    {% if params.image %}
+    <img src="{{ params.image }}" alt="{{ params.name }}" class="mb-2 ml-2 w-1/2 float-right h-auto rounded-lg">
+    {% endif %}
+    {% if params.bio %}
+    {{ params.bio }}
+    {% endif %}
+  </div>
 </div>
 {% endmacro %}
