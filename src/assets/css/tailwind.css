@@ -1,10 +1,6 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   scroll-behavior: smooth;
@@ -15,65 +11,14 @@ body, .ff-sans-serif {
 h1, h2, h3, h4, .ff-serif {
   font-family: 'Patua One', cursive;
 }
-a:link, a:visited, a:hover, a:active {
-  color: #708E3B;
-  /* text-decoration: underline; */
-}
-.text-white a {
-  color: #A8AD9E;
-}
-.home .hero, .home .hero .row {
-  height: 100vh;
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .home .hero {
   background-image: linear-gradient(to bottom, rgba(69, 67, 64, 0.8), rgba(69, 67, 64, 0.5)), url("/assets/img/studio.jpg");
   background-size: cover;
   background-position: 0 0, bottom center;
-  background-color: rgba(69, 67, 64, 1);
-  color: #ffffff;
-}
-.services .service {
-  padding: 60px 0;
-}
-.services .fa-chevron-circle-right {
-  color: #708E3B;
 }
 .section-odd {
-  background-color: #f8f8f8;
-  /* color: #ffffff; */
-}
-.section-even {
-  background-color: #ffffff;
+  background-color: #e0e1de;
 }
 .fa-ul {
   margin-left: 1.5em;
 }
-.bg-light {
-  background-color: #ffffff!important;
-}
-.btn-primary {
-  background-color: #68261F;
-  border-color: #68261F;
-  color: #ffffff !important;
-}
-.btn-primary:hover {
-  background-color: #5F231D;
-  border-color: #5F231D;
-  color: #ffffff !important;
-}
-.btn-outline-primary {
-  background-color: transparent;
-  border-color: #68261F;
-  color: #68261F !important;
-}
-.btn-outline-primary:hover {
-  background-color: #5F231D;
-  border-color: #5F231D;
-  color: #ffffff !important;
-}
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

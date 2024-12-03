@@ -1,13 +1,13 @@
 {% macro homeService(oddEven, title, slug, alt, features, whatToExpect) %}
-<section id="{{ slug }}" class="service section-{{ oddEven }}">
-  <div class="container">
-    <h2 class="mb-4">{{ title }}</h2>
-    <div class="row">
-      <div class="col-12 col-lg-3">
-        <img src="/assets/img/{{ slug }}.jpg" class="img-fluid mb-4 mb-lg-0" alt="{{ alt }}">
+<section id="{{ slug }}" class="service section-{{ oddEven }} py-10">
+  <div class="container px-4">
+    <h2 class="text-2xl md:text-3xl mb-4 md:mb-6">{{ title }}</h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+      <div class="md:col-span-1">
+        <img src="/assets/img/{{ slug }}.jpg" class="w-auto" alt="{{ alt }}">
       </div>
-      <div class="col-12 col-lg-7">
-        <ul class="fa-ul">
+      <div class="md:col-span-3">
+        <ul class="fa-ul mb-4">
         {% for feature in features %}
           <li><span class="fa-li"><i class="fas fa-chevron-circle-right"></i></span>{{ feature }}</li>
         {% endfor %}
@@ -16,9 +16,31 @@
           <strong>What to expect:</strong>
           {{ whatToExpect }}
         </p>
-        <a href="https://light-life-massage.square.site/" class="btn btn-primary">Book Now</a>
+        <p class="mt-6">
+          <a href="https://light-life-massage.square.site/" class="bg-rose-950 rounded-md w-fit px-3 py-2 text-white">Book Now</a>
+        </p>
       </div>
     </div>
   </div>
 </section>
+{% endmacro %}
+
+{% macro bio(params) %}
+<div class="mx-4 p-4 rounded-lg shadow-md">
+  <h2 class="text-xl font-bold mb-2">{{ params.name }}</h2>
+  {% for schedule in params.schedules %}
+  <h3 class="">{{ schedule }}</h3>
+  {% endfor %}
+  <p class="mt-4">
+    <a class="bg-rose-950 rounded-md w-fit px-3 py-1 text-sm text-white" href="{{ params.link }}">{{ params.linkText }}</a>
+  </p>
+  {% if params.bio %}
+    <div class="bio mt-6">
+      {% if params.image %}
+        <img src="{{ params.image }}" alt="{{ params.name }}" class="mb-2 ml-2 w-1/2 float-right h-auto rounded-lg">
+      {% endif %}
+      {{ params.bio }}
+    </div>
+  {% endif %}
+</div>
 {% endmacro %}

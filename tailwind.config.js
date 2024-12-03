@@ -9,8 +9,10 @@ module.exports = {
       },
     },
     container: {
-      // center: true
+      center: true
     }
+  },
+  colors: {
   },
   plugins: [],
 }

@@ -3,19 +3,43 @@ layout: page
 title: Utah County Appointments
 ---
 
-<div class="container">
-  <div class="grid grid-cols-3 gap-4 mt-5">
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      <h2 class="text-xl font-bold mb-2">Brooke</h2>
-      <p>Book now: <a class="btn btn-primary btn-sm ml-2" href="https://www.instagram.com/brookelind_massage/">Instagram</a></p>
-    </div>
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      <h2 class="text-xl font-bold mb-2">Katelyn</h2>
-      <p>Book now</p>
-    </div>
-    <div class="bg-white p-6 rounded-lg shadow-md">
-      <h2 class="text-xl font-bold mb-2">Rachel</h2>
-      <p>Book now</p>
-    </div>
+<div class="container my-4">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+    {% import 'macros.njk' as macros %}
+    {{ macros.bio(
+      {
+        name:'Brooke',
+        schedules:[
+          'Fridays 8am - 10pm'
+        ],
+        link:'https://www.instagram.com/brookelind_massage/',
+        linkText:'Book Now'
+      }
+    )}}
+    {{ macros.bio(
+      {
+        name:'Katelyn',
+        image:'/assets/img/katelyn.jpg',
+        schedules:[
+          'Tuesdays 7pm - 10pm',
+          'Every second Saturday 8am - 10pm'
+        ],
+        link:'tel:8016150328',
+        linkText:'Call or Text (801) 615-0328 to book',
+        bio:'Katelyn Cutler graduated from Utah College of Massage Therapy in 2017 and has been actively practicing in the field since, focusing mostly on injury rehabilitation and trigger point therapy. Katelyn has worked in a variety of settings, including chiropractic offices, resorts, spas, corporate offices, and at miscellaneous events. Katelyn also has a Bachelors of Science in Anthropology from the University of Utah with her emphasis being in Health and Integrated Human Biology. Her passion for learning about and understanding the human body led her to teach Anatomy and Pathology at Healing Mountain Massage School-Orem in 2023. She continues to evolve as a massage therapist and applies her knowledge and observations into her massage techniques, striving to adapt each massage to fit an individual’s needs. For scheduling and pricing, please contact Katelyn directly at (801) 615-0328.'
+      }
+    )}}
+    {{ macros.bio(
+      {
+        name:'Rachel',
+        schedules:[
+          'Thursdays 4:30pm - 10pm',
+          'Every second Saturday 8am - 10pm',
+          'Every first Saturday 4:30pm - 10pm'
+        ],
+        link:'https://www.vagaro.com/foundmassage',
+        linkText:'Book Now'
+      }
+    )}}
   </div>
 </div>
