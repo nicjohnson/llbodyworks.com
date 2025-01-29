@@ -4,16 +4,22 @@ title: Utah County Appointments
 ---
 
 <div class="container my-4">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
     {% import 'macros.njk' as macros %}
     {{ macros.bio(
       {
-        name:'Brooke',
+        name:'Heather',
+        image:'/assets/img/heather.jpg',
         schedules:[
-          'Fridays 8am - 10pm'
+          'Tuesdays 8:30am - 8pm',
+          'Wednesdays 8:30am - 8pm',
+          'Thursdays 8:30am - 8pm',
+          'Fridays 8:30am - 8pm',
+          'Saturdays 8:30am - 8pm'
         ],
-        link:'https://www.instagram.com/brookelind_massage/',
-        linkText:'Book Now'
+        link:'https://www.massagebook.com/therapists/heatheradams-lmt?src=external',
+        linkText:'Book Now',
+            bio: 'Heather has been providing the best Thai Yoga Therapy in Utah Valley for the last 5 years. She loves it so much! She loves the change she sees in people because of it. It is a full body treatment that leaves them feeling revived and ready to face the day! Last year, Heather attended Healing Mountain Massage School, and she now offers a professional, intuitive, and results-driven massage. Her skills include cupping, trigger point, prenatal, cranial sacral, lymph, Reiki, Thai Massage, Swedish Massage, reflexology, Shiatsu, crystal healing, and spa treatments, to name a few.  Let’s get you feeling even better!'
       }
     )}}
     {{ macros.bio(
@@ -41,6 +47,16 @@ title: Utah County Appointments
         link:'https://www.vagaro.com/foundmassage',
         linkText:'Book Now',
         bio: 'Rachel has been a licensed massage therapist for over 10 years, specializing in deep tissue, sports recovery, pre and post-natal, and somato-emotional integration(SEI). She began Found based on the belief that we are all looking for something, and when we allow ourselves the time and space to pay attention to our bodies and quiet our minds, we can find it. Whether it’s a PR for your next race, recovery after an injury, quality of life as you age, or mental quiet in the midst of life stress or chronic pain, taking space through body work helps realign us toward our goals. You can schedule Rachel for single massages, couples, corporate chair massage events, and in-home massage as well!'
+      }
+    )}}
+    {{ macros.bio(
+      {
+        name:'Brooke',
+        schedules:[
+          'Fridays 8am - 10pm'
+        ],
+        link:'https://www.instagram.com/brookelind_massage/',
+        linkText:'Book Now'
       }
     )}}
   </div>
